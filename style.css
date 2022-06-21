@@ -37,22 +37,24 @@ html{
     width: 50%;
 }
 
+h2 span{
+    color: purple;
+}
+
 .right-div{
     width: 50%;
     position: relative;
     background: url(images/image-header-desktop.jpg) no-repeat center center/cover; 
     z-index: 1;
 }
-.right-div::before{
+.right-div::before {
     content: "";
     position: absolute;
-    background-color: hsla(305, 57%, 46%, 0.425);
+    background-color: hsl(265deg 55% 54% / 43%);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* z-index: -1; */
-
 }
 .content h2{
     font-size: 3rem;
@@ -70,7 +72,10 @@ html{
 @media (max-width: 576px){
     .main-container{
         height: auto;
+    }
 
+    .body-main{
+        height: 100%;
     }
     .right-div{
         width: 100%;
